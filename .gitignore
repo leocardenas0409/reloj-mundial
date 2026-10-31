@@ -1,0 +1,19 @@
+# Dependencias y compilados
+node_modules/
+dist/
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/*
+!.vscode/settings.json
+.idea/
+
+# Variables de entorno y secretos
+.env
+.env.*
+
+# Registros
+*.log
