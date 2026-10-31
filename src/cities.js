@@ -7,6 +7,7 @@ const REGIONS = [
     cities: [
       { name: "Lima", country: "Perú", tz: "America/Lima" },
       { name: "Bogotá", country: "Colombia", tz: "America/Bogota" },
+      { name: "Santiago", country: "Chile", tz: "America/Chile" },
       { name: "Nueva York", country: "Estados Unidos", tz: "America/New_York" },
       { name: "Los Ángeles", country: "Estados Unidos", tz: "America/Los_Angeles" },
       { name: "São Paulo", country: "Brasil", tz: "America/Sao_Paulo" },
