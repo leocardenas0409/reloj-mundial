@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reloj Mundial</title>
+  <meta name="description" content="Hora actual en las ciudades más emblemáticas de cada región del mundo.">
+  <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+  <header class="top">
+    <div class="top__title">
+      <h1>Reloj Mundial</h1>
+      <p>Hora actual en las ciudades más conocidas de cada región.</p>
+    </div>
+    <div class="top__local" aria-label="Tu hora local">
+      <span class="top__local-label">Tu hora local</span>
+      <span class="top__local-time" id="local-time">--:--:--</span>
+      <span class="top__local-zone" id="local-zone"></span>
+    </div>
+  </header>
+
+  <section class="controls" aria-label="Controles">
+    <div class="tabs" id="tabs" role="group" aria-label="Filtrar por región"></div>
+    <div class="controls__right">
+      <input class="search" id="search" type="search" placeholder="Buscar ciudad…" aria-label="Buscar ciudad">
+      <button class="toggle" id="format-toggle" type="button" aria-pressed="true">24 h</button>
+    </div>
+  </section>
+
+  <main>
+    <div class="grid" id="grid"></div>
+    <p class="empty" id="empty" hidden>No se encontraron ciudades.</p>
+  </main>
+
+  <footer class="foot">
+    <p>Proyecto de Ingeniería de Software · Los horarios se calculan con la API Intl del navegador, incluido el horario de verano.</p>
+  </footer>
+
+  <script src="src/cities.js"></script>
+  <script src="src/app.js"></script>
+</body>
+</html>
